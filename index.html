@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinav Srivastava | CAD Automation &amp; Data Analytics</title>
+  <meta name="description" content="Portfolio of Abhinav Srivastava: CAD Engineer, Python automation, SQL, Power BI and data analytics." />
+  <meta property="og:title" content="Abhinav Srivastava | Portfolio" />
+  <meta property="og:description" content="CAD automation, data analytics and AI-assisted web projects." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">AS<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="btn small">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="mono eyebrow">Hi, I'm</p>
+        <h1>Abhinav <span class="grad">Srivastava</span></h1>
+        <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead">
+          I build automation for chip and board design flows, turn raw data into dashboards,
+          and ship AI-assisted web apps.
+        </p>
+        <div class="cta">
+          <a href="#projects" class="btn">View my work</a>
+          <a href="resume.pdf" class="btn ghost" download>Download resume</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/abhinav2001sri" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/abhi9sri/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:abhinav2000sri@gmail.com">Email</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">&#8595;</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h3 class="title reveal"><span class="mono num">01.</span> About me</h3>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>
+            I'm a CAD Engineer at Sevya IT, working with Analog Devices India on automation that
+            generates unified component libraries for Cadence Allegro and Virtuoso. With a B.Tech in
+            Electronics and Communication Engineering, I enjoy the space where hardware design meets
+            software and data.
+          </p>
+          <p>
+            Outside of work I analyse data with SQL, Python and Power BI, and I build web projects
+            with the help of modern AI coding tools.
+          </p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><b data-count="1">0</b><span>Year+ in industry</span></div>
+          <div class="stat"><b data-count="3">0</b><span>Featured projects</span></div>
+          <div class="stat"><b data-count="2">0</b><span>Domains: EDA &amp; Data</span></div>
+          <div class="stat"><b data-count="1">0</b><span>Google certification</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h3 class="title reveal"><span class="mono num">02.</span> Experience</h3>
+      <div class="timeline">
+        <article class="t-item reveal">
+          <span class="dot"></span>
+          <div class="card">
+            <div class="row"><h4>CAD Engineer</h4><span class="date mono">Jan 2025 - Present</span></div>
+            <p class="company">Sevya IT &middot; Client: Analog Devices India</p>
+            <ul>
+              <li>Developed Python and SKILL automation that generates Unified Component Libraries for Allegro and Virtuoso.</li>
+              <li>Built validation that checks generation for faults and produces summarised HTML/CSS reports.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>SKILL</span><span>Linux</span><span>Perforce</span><span>HTML/CSS</span></div>
+          </div>
+        </article>
+        <article class="t-item reveal">
+          <span class="dot"></span>
+          <div class="card">
+            <div class="row"><h4>Summer Trainee</h4><span class="date mono">Jul 2023 - Aug 2023</span></div>
+            <p class="company">Bharat Heavy Electricals Limited, Varanasi</p>
+            <ul>
+              <li>Gained hands-on exposure to Computerised Numerical Control (CNC) used for machining heavy engineering components.</li>
+            </ul>
+            <div class="tags"><span>CNC</span><span>Manufacturing</span></div>
+          </div>
+        </article>
+        <article class="t-item reveal">
+          <span class="dot"></span>
+          <div class="card">
+            <div class="row"><h4>Google Data Analytics Professional Certificate</h4><span class="date mono">Jul 2022</span></div>
+            <p class="company">Google / Coursera</p>
+            <ul>
+              <li>Covered data preparation, analysis, visualisation, spreadsheets, SQL and turning data into business insight.</li>
+            </ul>
+            <div class="tags"><span>SQL</span><span>Spreadsheets</span><span>Visualisation</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h3 class="title reveal"><span class="mono num">03.</span> Projects</h3>
+      <div class="grid">
+        <article class="card project tilt reveal">
+          <div class="icon">&#9881;</div>
+          <h4>UCL Gen &amp; UCL QA</h4>
+          <p>
+            Automation that monitors for new components, then generates symbols and layouts in one pass
+            as a unified library for both Allegro and Virtuoso. The QA companion validates the output
+            and publishes a visual HTML/CSS assessment report.
+          </p>
+          <div class="tags"><span>Python</span><span>SKILL</span><span>Virtuoso</span><span>Linux</span><span>Perforce</span><span>HTML/CSS</span></div>
+        </article>
+
+        <article class="card project tilt reveal">
+          <div class="icon">&#128202;</div>
+          <h4>Customer Demand &amp; Supply Chain Dashboard</h4>
+          <p>
+            AI-assisted analytics workflow over a customer-order dataset to track demand, backlog,
+            booking trends and fulfilment risk. SQL and Pandas clean and validate the data; Power BI
+            shows demand trends, backlog ageing and service-level KPIs; weekly Excel reports are automated.
+          </p>
+          <div class="tags"><span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Pandas</span></div>
+          <div class="links">
+            <a href="https://github.com/abhinav2001sri/supply-chain-analytics" target="_blank" rel="noopener">GitHub &#8599;</a>
+          </div>
+        </article>
+
+        <article class="card project tilt reveal">
+          <div class="icon">&#127911;</div>
+          <h4>JamAlong: Collaborative Media Rooms</h4>
+          <p>
+            Interactive web platform where users create or join shared rooms for synchronised YouTube
+            viewing. Features playback sync, in-app chat, voice, reactions and meeting-style audio/video
+            and screen sharing.
+          </p>
+          <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Git/GitHub</span><span>AI Prompting</span></div>
+          <div class="links">
+            <a href="https://youtube-watch-party-1nb5.onrender.com/" target="_blank" rel="noopener">Live demo &#8599;</a>
+            <a href="https://github.com/abhinav2001sri/watch-party" target="_blank" rel="noopener">GitHub &#8599;</a>
+          </div>
+        </article>
+      </div>
+      <p class="more reveal">More on <a href="https://github.com/abhinav2001sri" target="_blank" rel="noopener">GitHub &rarr;</a></p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h3 class="title reveal"><span class="mono num">04.</span> Skills</h3>
+      <div class="skills">
+        <div class="card reveal">
+          <h4>Technical</h4>
+          <div class="chips">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Automation</span><span>SQL</span><span>PL/SQL</span>
+            <span>Power BI</span><span>Tableau</span><span>Advanced Excel</span><span>Data Analysis</span>
+            <span>Prompt Engineering</span><span>Generative AI</span><span>OOP</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h4>Tools &amp; Software</h4>
+          <div class="chips">
+            <span>Cadence Allegro</span><span>Cadence Virtuoso</span><span>SKILL</span><span>Linux</span><span>Git/GitHub</span>
+            <span>MySQL</span><span>SQL Developer</span><span>VS Code</span><span>Microsoft Excel</span><span>Microsoft Office</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h4>Soft Skills</h4>
+          <div class="chips">
+            <span>Analytical Thinking</span><span>Communication</span><span>Stakeholder Collaboration</span><span>Problem-Solving</span>
+            <span>Adaptability</span><span>Time Management</span><span>Teamwork</span><span>Process Improvement</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h3 class="title reveal"><span class="mono num">05.</span> Education</h3>
+      <div class="grid">
+        <article class="card reveal">
+          <h4>B.Tech, Electronics &amp; Communication Engineering</h4>
+          <p class="company">Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+          <p class="mono date">2020 - 2024 &middot; 73.40%</p>
+        </article>
+        <article class="card reveal">
+          <h4>Class XII (CBSE)</h4>
+          <p class="company">St. Marys Convent School, Varanasi</p>
+          <p class="mono date">2019 &middot; 93.60%</p>
+        </article>
+        <article class="card reveal">
+          <h4>Class X (CBSE)</h4>
+          <p class="company">St. Marys Convent School, Varanasi</p>
+          <p class="mono date">2017 &middot; 91.20%</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <p class="mono eyebrow reveal">06. What's next?</p>
+      <h3 class="title big reveal">Let's work together</h3>
+      <p class="lead reveal">
+        Open to opportunities in CAD automation, data analytics and web development.
+        My inbox is always open.
+      </p>
+      <a class="btn reveal" href="mailto:abhinav2000sri@gmail.com">Say hello</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/abhinav2001sri" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/abhi9sri/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:abhinav2000sri@gmail.com">Email</a>
+    </div>
+    <p class="mono">&copy; <span id="year"></span> Abhinav Srivastava</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
